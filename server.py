@@ -3,14 +3,8 @@ import pickle
 import _thread as th  # need to have clients on separate threads so they can run concurrently
 from game import game_cl
 
-<<<<<<< HEAD
 PORT = 5569
 SERVER = '10.6.50.178'#socket.gethostbyname(socket.gethostname())  # local host IP address
-=======
-PORT = 5555
-SERVER = socket.gethostbyname(socket.gethostname())  # local host IP address
-print(SERVER)
->>>>>>> e2554049d4494043debcf90963327a0f1306d9d1
 ADDR = (SERVER, PORT)
 FORMAT = 'utf-8'
 

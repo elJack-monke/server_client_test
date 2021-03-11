@@ -96,8 +96,8 @@ def main():
     n = network()
     p = int( n.get_p() )  # get player number
     if p == 9:
-        print('server error'); pygame.quit()
-    print('You are player {}'.format(p))  # check previous line worked
+        print('server error\n'); pygame.quit()
+    print('You are player {}\n'.format(p))  # check previous line worked
 
     while run:  # Main game loop here
         clock.tick(60)
@@ -114,7 +114,7 @@ def main():
             try: game = n.send('reset')
             except:
                 run = False
-                print( "Could not get game :(" )
+                print( "Could not get game :(\n" )
                 break
 
             # Check who won and print message to the screen if player 0 won and this client instance is player 0 -> print 'Won' etc.
